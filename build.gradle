@@ -28,7 +28,7 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
     implementation 'org.springframework.boot:spring-boot-starter-web'
     implementation 'org.springframework.boot:spring-boot-starter-websocket'
-    implementation 'com.example:UberProject-EntityService:0.0.6-SNAPSHOT'
+    implementation 'com.example:UberProject-EntityService:0.0.7-SNAPSHOT'
     compileOnly 'org.projectlombok:lombok'
     developmentOnly 'org.springframework.boot:spring-boot-devtools'
     runtimeOnly 'com.mysql:mysql-connector-j'
@@ -36,6 +36,9 @@ dependencies {
     annotationProcessor 'org.projectlombok:lombok'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+    implementation('com.squareup.retrofit2:retrofit:2.4.0')
+    implementation('com.squareup.retrofit2:converter-gson:2.4.0')
+    implementation 'org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:4.3.0'
 }
 
 tasks.named('test') {
