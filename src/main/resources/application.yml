@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: UberProject-BookingService
+  datasource:
+    url: jdbc:mysql://localhost:3306/Uber_Db_Local
+    username: root
+    password: ${mysql_password}
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: validate
+
+server:
+  port: 8080
